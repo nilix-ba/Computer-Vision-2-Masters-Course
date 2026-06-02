@@ -1,0 +1,43 @@
+{
+  "config": {
+    "experiment_name": "resnet18_regularized",
+    "epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "model_class": "BiologicallyOptimizedSaliencyNet",
+    "loss_class": "BiologicallyAlignedSaliencyLoss",
+    "loss_kwargs": {},
+    "optimizer_class": "Adam",
+    "optimizer_kwargs": {},
+    "device": "mps",
+    "resume_training": true,
+    "save_best_only": true,
+    "verbose": true
+  },
+  "train_history": [
+    3.0152163196228696,
+    1.762759805756732,
+    1.6625341006461096,
+    1.564690958240075,
+    1.49280434723941,
+    1.40826033300665,
+    1.3446192564523307,
+    1.2910126007483629,
+    1.2190324821554654,
+    1.1795303888187676
+  ],
+  "val_history": [
+    1.8203799217305285,
+    1.7122585697376982,
+    1.6930904557518924,
+    1.7114361905037088,
+    1.7592287410235574,
+    1.6731551014785226,
+    1.7132186061101602,
+    1.769484241803487,
+    1.6991208039276988,
+    1.7302031001300677
+  ],
+  "best_val_loss": 1.6731551014785226
+}
